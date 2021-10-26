@@ -1,0 +1,24 @@
+{
+    "name": "functional-programming",
+    "version": "1.0.0",
+    "description": "Repository for the class functional programming",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kip-Hub/functional-programming.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kip-Hub/functional-programming/issues"
+    },
+    "homepage": "https://github.com/Kip-Hub/functional-programming#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.14"
+    }
+}
