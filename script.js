@@ -1,25 +1,27 @@
-// fetch('/data/tech-track-dataset.json')
-//     .then(results => results.json())
-//     // .then(data =>
-//     //     data.forEach(function(key, value) {
-//     //         console.log(key, value)
-//     //     })
-//     // )
-//     .then(data => {
-//         data.map(object => {
-//             console.log(object['Welke kleur kledingstukken heb je aan vandaag? (Meerdere antwoorden mogelijk natuurlijk...)'])
-//         })
-//     })
-
 const dataset = '/data/tech-track-dataset.json';
-const key = 'Wat is je favoriete windrichting?';
+const windrichtingKey = 'Wat is je favoriete windrichting?';
+const oogkleurKey = 'Wat is je oogkleur?';
 
 fetchData(dataset).then((data) => {
     console.log("data fetched");
 
-    const windrichtingen = parseWindrichting(data, key);
-
+    const windrichtingen = parseWindrichting(data, windrichtingKey);
     console.log(windrichtingen);
+
+    const oogKleur = parseOogkleuren(data, oogkleurKey);
+    console.log(oogKleur);
+
+    let cleanedData = []
+
+    for (let i = 0; i < data.length; i++) {
+        cleanedData.push({
+            Windrichting: windrichtingen[i],
+            Oogkleur: oogKleur[i]
+        })
+    }
+
+    console.table(cleanedData);
+
 });
 
 async function fetchData(url) {
@@ -32,10 +34,13 @@ async function fetchData(url) {
     }
 }
 
-function parseWindrichting(Arr, key) {
+function parseWindrichting(arr, key) {
 
-    const final = Arr.map((item) => (item[key]).toString().toLowerCase());
-    final.sort();
-    return final;
-    // return Arr;
+    var result = arr.map((item) => (item[key]).toString().toLowerCase());
+    return result;
+}
+
+function parseOogkleuren(arr, key) {
+    var result = arr.map((item) => (item[key]).toString().toLowerCase().replace('-', ''));
+    return result;
 }
