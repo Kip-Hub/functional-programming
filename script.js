@@ -24,8 +24,8 @@ fetchData(dataset).then((data) => {
     }
 
     console.table(cleanedData);
-    // showCleanedData(cleanedData);
 
+    showCleanedData(oogKleur);
 });
 
 async function fetchData(url) {
@@ -53,9 +53,12 @@ function parseHuisdieren(arr, key) {
     return result;
 }
 
-// function showCleanedData(data) {
+function showCleanedData(data) {
 
-//     const container = document.querySelector("section:first-of-type");
-//     const text = document.createElement("table");
-//     container.appendChild(text);
-// }
+    const container = document.querySelector("ul");
+    for (let i = 0; i < data.length; i++) {
+        container.insertAdjacentHTML(
+          'beforeend',`<li>${data[i]}</li>`
+        );
+      }
+}
