@@ -58,7 +58,7 @@ function showCleanedData(data) {
     const container = document.querySelector("ul");
     for (let i = 0; i < data.length; i++) {
         container.insertAdjacentHTML(
-          'beforeend',`<li>${data[i]}</li>`
+            'beforeend', `<li>${data[i]}</li>`
         );
-      }
+    }
 }
