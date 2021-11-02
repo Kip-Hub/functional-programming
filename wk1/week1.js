@@ -1,4 +1,4 @@
-const dataset = '/data/tech-track-dataset.json';
+const dataset = '../data/tech-track-dataset.json';
 const windrichtingKey = 'Wat is je favoriete windrichting?';
 const oogkleurKey = 'Wat is je oogkleur?';
 const huisdierKey = 'Wat is je favoriete soort huisdier?';
@@ -25,7 +25,7 @@ fetchData(dataset).then((data) => {
 
     console.table(cleanedData);
 
-    showCleanedData(oogKleur);
+    showCleanedData(windRichting);
 });
 
 async function fetchData(url) {
@@ -55,10 +55,8 @@ function parseHuisdieren(arr, key) {
 
 function showCleanedData(data) {
 
-    const container = document.querySelector("ul");
+    const container = document.querySelector("body");
     for (let i = 0; i < data.length; i++) {
-        container.insertAdjacentHTML(
-            'beforeend', `<li>${data[i]}</li>`
-        );
+        container.insertAdjacentHTML('beforeend', `<img src="../resources/${data[i]}.png"></img>`);
     }
 }

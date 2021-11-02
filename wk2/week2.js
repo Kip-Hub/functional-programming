@@ -5,8 +5,7 @@ fetchData(dataset).then((data) => {
     console.log(data);
     let setup = Object.values(data)[3];
     let delivery = Object.values(data)[4];
-    showSetup(setup);
-    showDelivery(delivery);
+    showJoke(setup, delivery);
 });
 
 async function fetchData(url) {
@@ -19,24 +18,15 @@ async function fetchData(url) {
     }
 }
 
-function showSetup(data) {
-
+function showJoke(setup, delivery) {
     const container = document.querySelector("body");
-    // for (let i = 0; i < data.length; i++) {
-    //     container.insertAdjacentHTML(
-    //         'beforeend', `<p>${data[i]}</p>`
-    //     );
-    // }
     container.insertAdjacentHTML(
-        'beforeend', `<h2>${data}</h2>`
+        'beforeend', `<h2>${setup}</h2>`
     );
-}
 
-function showDelivery(data) {
-    if (data.length > 1) {
-        const container = document.querySelector("body");
+    if (delivery.length > 0) {
         container.insertAdjacentHTML(
-            'beforeend', `<p>${data}</p>`
+            'beforeend', `<p>${delivery}</p>`
         );
 
     }
