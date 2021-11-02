@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    margin: 2em;
+}
+
+article img {
+    max-width: 10em;
+}
