@@ -1,12 +1,11 @@
 * {
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: content-box;
 }
 
 h1 {
     margin: 1em 0 0 2.2em;
-
 }
 
 h2 {
@@ -25,7 +24,7 @@ body {
 body ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 body section:first-of-type ul li {
@@ -45,6 +44,7 @@ body section:last-of-type ul li {
     padding: 1em;
     min-width: 2em;
     border-radius: 5%;
+    text-align: center;
 }
 
 img {
@@ -53,20 +53,20 @@ img {
     transition: transform 0.5s;
 }
 
-#zuid:hover {
-    transform: translate(0px, -20px)scale(0.9);
-}
-
-#noord:hover {
+.zuid:hover {
     transform: translate(0px, 20px)scale(0.9);
 }
 
-#oost:hover {
-    transform: translate(-20px, 0px)scale(0.9);
+.noord:hover {
+    transform: translate(0px, -20px)scale(0.9);
 }
 
-#west:hover {
+.oost:hover {
     transform: translate(20px, 0px)scale(0.9);
+}
+
+.west:hover {
+    transform: translate(-20px, 0px)scale(0.9);
 }
 
 section:first-of-type {
@@ -82,7 +82,7 @@ section:first-of-type {
 }
 
 #melk {
-    background-color:rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255)
 }
 
 #ik_ben_lactose_intolerant_ga_weg {

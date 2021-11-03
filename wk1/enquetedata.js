@@ -65,7 +65,7 @@ function renderWindrichtingen(data) {
 
     const container = document.querySelector("section:first-of-type ul");
     for (let i = 0; i < data.length; i++) {
-        container.insertAdjacentHTML('beforeend', `<li><img id="${data[i]}"src="../resources/${data[i]}.png"></img></li>`);
+        container.insertAdjacentHTML('beforeend', `<li><img class="${data[i]}"src="../resources/${data[i]}.png"></img></li>`);
 
         //source: https://www.kindpng.com/imgv/himRobb_green-arrows-png-green-arrow-left-png-transparent/
     }
@@ -75,6 +75,6 @@ function renderZuivel(data) {
 
     const container = document.querySelector("section:last-of-type ul");
     for (let i = 0; i < data.length; i++) {
-        container.insertAdjacentHTML('beforeend', `<li id="${data[i]}">${data[i]}</li>`);     
+        container.insertAdjacentHTML('beforeend', `<li class="${data[i]}">${data[i]}</li>`);
     }
 }
