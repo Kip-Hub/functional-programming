@@ -39,27 +39,27 @@ async function fetchData(url) {
     } catch {
         console.log("Can't fetch data");
     }
-}
+};
 
 function parseWindrichting(arr, key) {
     var result = arr.map((item) => (item[key]).toString().toLowerCase());
     return result;
-}
+};
 
 function parseOogkleuren(arr, key) {
     var result = arr.map((item) => (item[key]).toString().toLowerCase().replace('-', ',').replace(' , ', ','));
     return result;
-}
+};
 
 function parseHuisdieren(arr, key) {
     var result = arr.map((item) => (item[key]).toString().toLowerCase().replace(' of ', ',').replace(' ', '_'));
     return result;
-}
+};
 
 function parseZuivel(arr, key) {
     var result = arr.map((item) => (item[key]).toString().toLowerCase().replace('!', '').replace(',', '').replaceAll(' ', '_'));
     return result;
-}
+};
 
 function renderWindrichtingen(data) {
 
@@ -69,7 +69,7 @@ function renderWindrichtingen(data) {
 
         //source: https://www.kindpng.com/imgv/himRobb_green-arrows-png-green-arrow-left-png-transparent/
     }
-}
+};
 
 function renderZuivel(data) {
 
@@ -77,4 +77,4 @@ function renderZuivel(data) {
     for (let i = 0; i < data.length; i++) {
         container.insertAdjacentHTML('beforeend', `<li class="${data[i]}">${data[i]}</li>`);
     }
-}
+};

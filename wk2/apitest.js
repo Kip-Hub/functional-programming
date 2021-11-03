@@ -16,10 +16,10 @@ async function fetchData(url) {
     } catch {
         console.log("Can't fetch data");
     }
-}
+};
 
 function showJoke(setup, delivery) {
-    const container = document.querySelector("body");
+    const container = document.querySelector("section");
     container.insertAdjacentHTML(
         'beforeend', `<h2>${setup}</h2>`
     );
@@ -30,4 +30,4 @@ function showJoke(setup, delivery) {
         );
 
     }
-}
+};

@@ -24,7 +24,7 @@ body {
 body ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 body section:first-of-type ul li {
@@ -87,4 +87,9 @@ section:first-of-type {
 
 .ik_ben_lactose_intolerant_ga_weg {
     background-color: grey;
+}
+
+footer {
+    margin: 1em;
+    text-align: center;
 }
