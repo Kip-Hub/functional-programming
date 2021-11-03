@@ -73,18 +73,18 @@ section:first-of-type {
     margin-bottom: 5em;
 }
 
-#ei {
+.ei {
     background-color: rgb(229, 185, 160);
 }
 
-#kaas {
+.kaas {
     background-color: rgb(245, 245, 128);
 }
 
-#melk {
+.melk {
     background-color: rgb(255, 255, 255)
 }
 
-#ik_ben_lactose_intolerant_ga_weg {
+.ik_ben_lactose_intolerant_ga_weg {
     background-color: grey;
 }
