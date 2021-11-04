@@ -22,7 +22,7 @@ This repository consists of my work for the Functional Programming course, which
 
 The goal of this course is to learn how to work with external and local datasets, how to clean the data included in them, so it can later be used to create visualisations. There is also somewhat of a focus on getting familiar with functional programming patterns, and how to use them in your projects.
 
-The criteria for the project can be found here
+The criteria for the project can be found [here](https://github.com/Kip-Hub/functional-programming/wiki/rubric)
 
 ## ⚙️ Installation
 
