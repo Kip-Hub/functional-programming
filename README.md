@@ -3,6 +3,11 @@
 ![API preview](https://i.imgur.com/JHZcnWL.png)
 
 ## 📁 Contents
+[🚀 Description](https://github.com/Kip-Hub/functional-programming#-description)  
+[⚙️ Installation](https://github.com/Kip-Hub/functional-programming#%EF%B8%8F-installation)  
+[📚 Wiki](https://github.com/Kip-Hub/functional-programming#-wiki)  
+[🧩 Resources](https://github.com/Kip-Hub/functional-programming#-resources)  
+[📎 License](https://github.com/Kip-Hub/functional-programming#-license)  
 
 ## 🚀 Description
 
