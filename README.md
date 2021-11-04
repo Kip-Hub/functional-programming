@@ -1,6 +1,13 @@
 # Functional Programming
 
 ![API preview](https://i.imgur.com/JHZcnWL.png)
+<details>
+
+<summary>Dataset preview gif</summary
+
+![gif](https://thumbs.gfycat.com/AfraidDampAfricanrockpython-size_restricted.gif)
+
+</details>
 
 ## 📁 Contents
 [🚀 Description](https://github.com/Kip-Hub/functional-programming#-description)  
