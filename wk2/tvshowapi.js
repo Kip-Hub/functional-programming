@@ -1,4 +1,4 @@
-const dataset = 'https://www.episodate.com/api/most-popular?page=1';
+const dataset = 'https://www.episodate.com/api/most-popular?page=4';
 
 
 fetchData(dataset)
@@ -11,7 +11,8 @@ fetchData(dataset)
                 const startDate = fixDate(obj.start_date);
                 const status = removeCaps(obj.status);
                 const networkWithoutCaps = removeCaps(obj.network);
-                const network = removeSpaces(networkWithoutCaps);
+                const networkWithoutPlus = removePlus(networkWithoutCaps);
+                const network = removeSpaces(networkWithoutPlus);
                 const showImg = obj.image_thumbnail_path;
     
                 renderShows(showName, startDate, status, network, showImg);
@@ -67,5 +68,10 @@ function removeDots(data) {
 
 function removeCommas(data) {
     let result = data.replaceAll(/'/g, '');
+    return result;
+};
+
+function removePlus(data) {
+    let result = data.replaceAll('+', ' plus');
     return result;
 };
