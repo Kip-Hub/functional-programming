@@ -34,7 +34,7 @@ function renderShows(name, date, status, network, img) {
 async function fetchData(url) {
     try {
         const response = await fetch(url); // Wait for the url to be fetched
-        const data = await response.json(); // Wait for the response to be data response to be given in json
+        const data = await response.json(); // Wait for the response to be data response to be given in json for it then to be returned and used
         return data;
     } catch {
         console.log("Can't fetch data");
